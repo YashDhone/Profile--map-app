@@ -1,0 +1,17 @@
+<div class="map-container">
+  <google-map height="500px" width="100%" [center]="center" [zoom]="zoom">
+    <!-- Loop through the profiles and add markers -->
+    <map-marker
+      *ngFor="let profile of profiles"
+      [position]="{ lat: profile.lat, lng: profile.lng }"
+      [label]="profile.name"
+    >
+      <map-info-window>
+        <h3>{{ profile.name }}</h3>
+        <p>Email: {{ profile.email }}</p>
+        <p>Phone: {{ profile.phone }}</p>
+        <p>Address: {{ profile.address }}</p>
+      </map-info-window>
+    </map-marker>
+  </google-map>
+</div>

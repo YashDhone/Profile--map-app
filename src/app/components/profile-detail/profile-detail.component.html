@@ -1,0 +1,11 @@
+<div class="profile-details-container" *ngIf="profile || defaultProfile">
+    <div class="profile-card">
+      <h2>{{ profile?.name || defaultProfile.name }}</h2>
+      <p><strong>Email:</strong> {{ profile?.email || 'N/A' }}</p>
+      <p><strong>Phone:</strong> {{ profile?.phone || 'N/A' }}</p>
+      <p><strong>Address:</strong> {{ profile?.address || 'N/A' }}</p>
+      <p><strong>Description:</strong></p>
+      <p>{{ profile?.description || defaultProfile.description }}</p>
+    </div>
+  </div>
+  

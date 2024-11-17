@@ -1,0 +1,23 @@
+.profile-details-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .profile-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .profile-card h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .profile-card p {
+    margin: 5px 0;
+  }
+  

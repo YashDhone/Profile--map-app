@@ -1,0 +1,6 @@
+/* Basic styles for the map container */
+.map-container {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
